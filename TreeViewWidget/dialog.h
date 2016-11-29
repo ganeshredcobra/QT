@@ -2,6 +2,8 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include <QTreeWidget>
+
 
 namespace Ui {
 class Dialog;
@@ -17,6 +19,10 @@ public:
 
 private:
     Ui::Dialog *ui;
+
+    void addTreeRoot(QString name, QString description);
+    void addTreeChild(QTreeWidgetItem *parent,
+                      QString name, QString description);
 };
 
 #endif // DIALOG_H
