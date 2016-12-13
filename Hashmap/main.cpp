@@ -22,7 +22,5 @@ int main(int argc, char *argv[])
         qDebug() << iter.key() << " : " << iter.value();
     }
 
-    qDebug()<<"Key "<<Hash.contains(2);
-
     return a.exec();
 }
